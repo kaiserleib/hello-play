@@ -1,0 +1,23 @@
+#------------------------------------------------------------------------------
+#  server.conf
+#------------------------------------------------------------------------------
+
+# Secret key
+# ~~~~~
+# The secret key is used to secure cryptographics functions.
+#
+# This must be changed for production, but we recommend not changing it in this file.
+#
+# See http://www.playframework.com/documentation/latest/ApplicationSecret for more details.
+play.crypto.secret = "iamtheverymodelofamodernmajorgeneral"
+
+# Database configuration
+# ~~~~~
+# You can declare as many datasources as you want.
+# By convention, the default datasource is named `default`
+#
+db.default.driver=com.mysql.jdbc.Driver
+db.default.url="jdbc:mysql://localhost/sofi?useLegacyDatetimeCode=false&serverTimezone=America/New_York"
+db.default.dialect="org.hibernate.dialect.MySQLDialect"
+db.default.username="password"
+db.default.password="password"

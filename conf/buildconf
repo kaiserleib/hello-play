@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "" > application.conf
+
+for file in `ls -1 conf.d/*.conf`; do
+ cat $file >> application.conf
+done
+
+cat server.conf.dist >> application.conf
